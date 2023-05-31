@@ -464,11 +464,43 @@ header.sticky{/*this make an effect in the header we make it with java script */
         transition :.2s ;
     }
 }
+
 @media (max-width: 670px){
     #menu-icon{
-        display:   block;
+        display:block;
     }
     .header-icons{
         display: inline-flex; 
     }
+    .navlist{
+        position: absolute;
+        top:100%;
+        left: -100%;
+        width: 280px;
+        height: 120vh;
+        background:var(--bg-color) ;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 150px 30px;
+        transition: all .45s ease;
+    }
+    .navlist a{
+        display: block;
+        margin: 1.2rem 0;
+    }
+    .navlist.open{
+        left:0;
+    }
+    .bx-menu:hover{
+        cursor: pointer;
+    }
 }
+#digital-clock{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-block-end: 1em;
+    margin-inline-end: 0px;
+  }
